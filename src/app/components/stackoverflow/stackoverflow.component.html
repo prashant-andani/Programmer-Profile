@@ -1,0 +1,31 @@
+<!-- Stackoverflow -->
+<div class="card">
+  <div class="card-block">
+    <h3 class="card-title"><i class="fa fa-stack-overflow"></i> Stackoverflow</h3>
+    <p class="card-text">
+      <a href="{{soData?.link}}" *ngIf="soData?.link">Profile Page</a>
+      <p>
+        Reputation: {{soData?.reputation}}
+      </p>
+      <div class="stats-container">
+        <div class="stats">
+          <h4>{{soData?.badgeCounts.gold}}</h4>
+          <p>
+            Gold
+          </p>
+        </div>
+        <div class="stats">
+          <h4>{{soData?.badgeCounts.silver}}</h4>
+          <p>
+            Silver
+          </p>
+        </div>
+        <div class="stats">
+          <h4>{{soData?.badgeCounts.bronze}}</h4>
+          <p>
+            Bronze
+          </p>
+        </div>
+      </div>
+  </div>
+</div>
