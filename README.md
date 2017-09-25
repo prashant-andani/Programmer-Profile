@@ -12,9 +12,9 @@ How to Run a app?
 Download or clone 
 Get in to the project directory
 npm install
-
 then 
 ng serve - to run the project
+Enjoy the app
 
 
 
