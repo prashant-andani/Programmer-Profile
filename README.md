@@ -10,9 +10,9 @@ Plase change in the config to put the urls of yours
 How to Run a app?
 Download or clone 
 Get in to the project directory
-npm install
+"npm install"
 then 
-ng serve - to run the project
+"ng serve" - to run the project
 Enjoy the app
 
 
