@@ -8,7 +8,6 @@ Note: This app is not hardcoded to show up the profile details of mine..
 Plase change in the config to put the urls of yours
 
 How to Run a app?
-
 Download or clone 
 Get in to the project directory
 npm install
