@@ -1,32 +1,32 @@
 <div class="card">
+    <div class="card-holder-div">
+        <span class="card-holder"></span>
+    </div>
     <div class="card-block">
         <h3 class="card-title"><i class="fa fa-github"></i> GitHub</h3>
-        <p class="card-text">
-            <a href="{{githubData?.blog}}" *ngIf="githubData?.blog">{{githubData?.blog}}</a>
-            <ul *ngFor="let repo of repoList; let i = index">
-                <li *ngIf="i < 3">
-                    <a href="{{repo.svn_url}}">{{repo.name}}</a>
-                    </li>
-            </ul>
-            <div class="stats-container">
-                <div class="stats">
-                    <h4>{{githubData?.followers}}</h4>
-                    <p>
-                        Followers
-                    </p>
-                </div>
-                <div class="stats">
-                    <h4>{{githubData?.following}}</h4>
-                    <p>
-                        Following
-                    </p>
-                </div>
-                <div class="stats">
-                    <h4>{{githubData?.public_repos}}</h4>
-                    <p>
-                        Projects
-                    </p>
-                </div>
+        <img src="{{githubData?.avatar_url}}" class="rounded-circle img-responsive" style="height: 85px"/>
+        <span>{{githubData?.name}}</span>
+    </div>
+    <div class="">
+        <div class="stats-container">
+            <div class="stats">
+                <h4>{{githubData?.followers}}</h4>
+                <p>
+                    Followers
+                </p>
             </div>
+            <div class="stats">
+                <h4>{{githubData?.following}}</h4>
+                <p>
+                    Following
+                </p>
+            </div>
+            <div class="stats">
+                <h4>{{githubData?.public_repos}}</h4>
+                <p>
+                    Projects
+                </p>
+            </div>
+        </div>
     </div>
 </div>

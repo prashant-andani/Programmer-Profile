@@ -1,0 +1,18 @@
+
+  <div class="jumbotron">
+    <h3 class="display-4">Profile Cards</h3>
+    <p class="lead">Githib, Stackoverflow and many more</p>
+    <hr class="my-4">
+    <div class="form-group">            
+      <label>Github Username</label>
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon3">https://github.com/</span>
+        <input type="text" [(ngModel)]="cards.github_user_id" class="form-control"  id="basic-url" aria-describedby="basic-addon3">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Stackoverflow User id</label>
+      <input type="text" [(ngModel)]="cards.stack_user_id" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="showCards()">Show Cards</button>
+</div>

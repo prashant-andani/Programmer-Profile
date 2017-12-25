@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-holder-div">
+      <span class="card-holder"></span>
+  </div>
+  <div class="card-block">
+    <h3 class="card-title">Codepen</h3>
+  </div>
+  <ul class="list-group list-group-flush" *ngFor="let pen of pens; let i = index" >
+    <li *ngIf="i < 5" class="list-group-item">
+      <span class="pen-title">{{pen.title}}</span>
+    </li>
+  </ul>
+  <ul class="list-group"> 
+      <li class="list-group-item list-group-item-action list-group-item-success">
+          Total Pens:&nbsp;<span class="pen-title">{{pens.length}}</span>
+      </li>
+  </ul>
+</div>

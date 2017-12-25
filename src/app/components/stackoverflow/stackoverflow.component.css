@@ -1,0 +1,77 @@
+.card-holder-div {
+	margin-top: 18px;
+}
+.card-holder {
+    display: block;
+    width: 50px;
+    margin-left: 101px;
+    border-radius: 3px;
+    height: 9px;
+    background: lightgray;
+		background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(lightgray), to(#fff));
+}
+.card {
+	width: 16rem !important;
+	border-radius: 0.7em;
+	min-height: 350px;
+	max-height: 350px;
+}
+.card .stats{
+	display: block;
+	float: left;
+	width: 33.333333%;
+	text-align: center;
+	padding-top: 10px;
+}
+.card .stats-container {
+	border-top: 2px solid #f3f3f3;
+}
+.card-title {
+	font-size: 1.4em;
+	text-align: center;	
+	margin-top:13px;
+}
+.card .card-block {
+  padding: 0.7em !important;
+}
+
+.card .stats:first-child{
+	border-right: 1px solid #EEEEEE;
+}
+
+.card .stats:last-child{
+	border-left: 1px solid #EEEEEE;
+}
+.card .stats h4{
+	font-weight: 400;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+.card .stats p{
+	color: #777777;
+	font-size: 12px;
+}
+.card .stats .custom-stats {
+	border: 0;
+}
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+.img-responsive {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	margin:0 auto;
+}
+
+.gold {
+  color: gold;
+}
+.silver {
+  color: silver;
+}
+.bronze {
+  color: #CD7F32;
+}
+

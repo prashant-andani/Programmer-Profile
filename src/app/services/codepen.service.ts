@@ -5,13 +5,13 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class StackoverflowService {
-    private stackoverflowApi = 'https://api.stackexchange.com//2.2/users/2830850?site=stackoverflow&filter=!)sjadGcYI.Rytq)IS30q';
-    // URL to web API
+export class CodepenService {
+    private codepenApi = 'https://cpv2api.com/pens/public/natewiley';
+      // URL to web API
     constructor(private http: Http) { }
 
-    getStackoverflowData(): Observable<any> {
-        return this.http.get(this.stackoverflowApi)
+    getPens(): Observable<any> {
+        return this.http.get(this.codepenApi)
             .map(this.extractData)
             .catch(this.handleError);
     }

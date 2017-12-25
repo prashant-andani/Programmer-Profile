@@ -24,7 +24,6 @@ export class GitBooksComponent implements OnInit {
 
     getStats(books) {
         books.forEach(book => {
-            console.log(book.counts.stars);
             this.stars = this.stars + parseInt(book.counts.stars);
             this.subscriptions += book.counts.subscriptions;
             this.discussions += book.counts.discussions;
